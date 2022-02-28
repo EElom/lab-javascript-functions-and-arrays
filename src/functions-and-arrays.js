@@ -127,7 +127,28 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes() {
+  const count = {}
+const result = []
+
+array.forEach(item => {
+    if (count[item]) {
+       count[item] +=1
+       return
+    }
+    count[item] = 1
+})
+
+for (let prop in count){
+    if (count[prop] >=2){
+        result.push(prop)
+    }
+}
+
+console.log(count)
+return result;
+
+}
 
 
 
